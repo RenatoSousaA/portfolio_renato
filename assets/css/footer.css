@@ -1,0 +1,61 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #133055;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.socials-media {
+    width: 60px;
+    height: 60px;
+    display: table;
+    margin: auto;
+}
+
+.midias {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 20px;
+}
+
+.midias:hover {
+    background-color: #37c21f42;
+    cursor: pointer;
+}
+
+.copyright {
+    background-color: #04234a;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.icon-midias {
+    width: 20px;
+    margin: 3px 0;
+}
+
+.text-icon {
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.toTop {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    border: 0;
+    background-color: #1bad0030;
+    color: #ffffff4f;
+}
+
+.toTop:hover {
+    background-color: #1bad0054;
+    color: #fff;
+}

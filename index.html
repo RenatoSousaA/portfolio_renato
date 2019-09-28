@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/image/favicon.ico" />
+
+    <!-- IMPORT STYLES -->
+    <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Renato Augusto de Sousa</title>
+</head>
+
+<body onscroll="changeScroll()" onload="changeScroll()" onresize="resizeElement()">
+    <header role="header" class="header">
+        <img class="img-logo" src="./assets/image/logo-renato.png" title="Logo Renato Sousa">
+        <nav class="nav_header-icon nav-toggle-icon">
+            <a id="iconBarsTimesMenu" href="javascript:;" onclick="showMenuFull()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a id="iconTimesMenu" href="javascript:;" onclick="hideMenuFull()">
+                <i class="fas fa-times"></i>
+            </a>
+        </nav>
+
+        <nav id="navHeader" class="nav_header nav-full">
+            <a href="">Home</a>
+            <a href="">Educação</a>
+            <a href="">Profissional</a>
+            <a href="">Contato</a>
+        </nav>
+
+    </header>
+
+    <main role="main" class="main" style="height: 2000px;">
+
+    </main>
+
+    <footer role="footer" class="footer">
+        <nav class="socials-media">
+            <a class="midias">
+                <i class="fab fa-linkedin"></i>
+                <span class="text-icon">Linkedin</span>
+            </a>
+
+            <a class="midias">
+                <i class="fab fa-twitter-square"></i>
+                <span class="text-icon">Twitter</span>
+            </a>
+
+            <a class="midias">
+                <i class="fab fa-facebook-square"></i>
+                <span class="text-icon">Facebook</span>
+            </a>
+
+            <a class="midias">
+                <i class="fab fa-instagram"></i>
+                <span class="text-icon">Instagram</span>
+            </a>
+
+        </nav>
+        <div class="copyright">
+            <p>© 2019 Copyright: Renato Sousa</p>
+        </div>
+
+        <button id="toTop" onclick="toTop();" class="toTop" title="Voltar para o topo"><i
+                class="far fa-hand-point-up"></i></button>
+    </footer>
+
+    <script defer src="./assets/fonts/font-awesome/js/all.min.js"></script>
+    <script src="./assets/js/toTop.js"></script>
+    <script src="./assets/js/toggleMenu.js"></script>
+</body>
+
+</html>
