@@ -1,0 +1,47 @@
+#sobre {
+    padding: 70px 15px 25px;
+    text-align: center;
+    background-image: linear-gradient(360deg, #b9b9b9d9 0%, #e0e0e0bf 51%, #fafafab2 93%);
+}
+
+.foto-perfil{
+    border-radius: 50%;
+    box-shadow: 2px 5px 9px 2px rgb(145, 145, 145);
+}
+
+.title_sobre {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.subtile_sobre {
+    margin-top: 20px;
+    color: #505050;    
+    font-style: italic;
+}
+
+.paragrafo_sobre {
+    margin-top: 20px;
+}
+
+.table_sobre{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.table_sobre tr td {
+    text-align: center;
+    width: 25%;
+    color: #146305;
+}
+
+.table_sobre tr td:hover {
+    color: #133055;
+    cursor: pointer;
+}
+
+.info_sobre {
+    margin-top: 10px;
+    font-size: 13pt;
+    font-weight: 500;
+}

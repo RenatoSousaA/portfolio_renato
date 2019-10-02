@@ -2,26 +2,48 @@ let refreshInteval;
 let positionY;
 let initialPositionY;
 
-function toTop() {
-    positionY = window.scrollY;
-    initialPositionY = window.scrollY;
-    refreshInteval = setInterval(intervalToTop, 15);
-}
+class ToTop {   
+    constructor() {
+        this.btnToTop = document.querySelector('#toTop');
+        this.body = document.querySelector('body');
 
-function intervalToTop() {    
-    window.scrollTo(0, positionY);
-    positionY = positionY - (initialPositionY / 20);
+        this.btnToTop.addEventListener(
+            'click',
+            this.toTop.bind()
+        )
 
-    if (positionY <= 0) {
-        clearInterval(refreshInteval);
-        window.scrollTo(0, 0);
+        window.addEventListener(
+            'scroll',
+            this.changeScroll
+        )
+
+        window.addEventListener(
+            'load',
+            this.changeScroll()
+        )
     }
-}
 
-function changeScroll() {
-    if (window.scrollY <= 0) {        
-        document.getElementById('toTop').style.visibility = 'hidden';
-    } else {
-        document.getElementById('toTop').style.visibility = 'visible';
+    toTop() {
+        positionY = window.scrollY;
+        initialPositionY = window.scrollY;
+        refreshInteval = setInterval(intervalToTop, 15);
+
+        function intervalToTop() {    
+            window.scrollTo(0, positionY);
+            positionY = positionY - (initialPositionY / 20);
+        
+            if (positionY <= 0) {
+                clearInterval(refreshInteval);
+                window.scrollTo(0, 0);
+            }
+        }
+    }
+
+    changeScroll() {
+        if (window.scrollY <= 0) {        
+            document.getElementById('toTop').style.visibility = 'hidden';
+        } else {
+            document.getElementById('toTop').style.visibility = 'visible';
+        }
     }
 }

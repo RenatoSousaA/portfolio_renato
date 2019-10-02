@@ -1,24 +1,48 @@
-function showMenuFull() {
-    document.getElementById('iconBarsTimesMenu').style.display = 'none';
-    document.getElementById('iconTimesMenu').style.display = 'block';
+class ToogleMenu {
+    constructor() {
+        this.iconBarras = document.querySelector('#iconBarsTimesMenu');
+        this.iconTimes = document.querySelector('#iconTimesMenu');
+        this.navHeader = document.querySelector('#navHeader');
+        this.body = document.querySelector('body');
 
-    document.getElementById('navHeader').style.display = 'block';
-}
+        this.iconBarras.addEventListener(
+            'click',
+            this.showMenuFull.bind(event, this)
+        )
 
-function hideMenuFull() {
-    document.getElementById('iconTimesMenu').style.display = 'none';
-    document.getElementById('iconBarsTimesMenu').style.display = 'block';
+        this.iconTimes.addEventListener(
+            'click',
+            this.hideMenuFull.bind(event, this)
+        )
 
-    document.getElementById('navHeader').style.display = 'none';
-}
+        window.addEventListener(
+            'resize',
+            this.resizeElement.bind(event, this),
+            this.body
+        )
+    }
 
-function resizeElement() {
-    document.getElementById('iconTimesMenu').style.display = 'none';
-    document.getElementById('iconBarsTimesMenu').style.display = 'block';
+    showMenuFull(element) {
+        element.iconBarras.style.display = 'none';
+        element.iconTimes.style.display = 'block';
+        element.navHeader.style.display = 'block';
+    }
 
-    if (window.outerWidth > 640) {
-        document.getElementById('navHeader').style.display = 'block';
-    } else {
-        document.getElementById('navHeader').style.display = 'none';
+    hideMenuFull(element) {
+        element.iconBarras.style.display = 'block';
+        element.iconTimes.style.display = 'none';
+
+        element.navHeader.style.display = 'none';
+    }
+
+    resizeElement(element) {
+        element.iconBarras.style.display = 'block';
+        element.iconTimes.style.display = 'none';
+
+        if (window.innerWidth > 640) {
+            element.navHeader.style.display = 'block';
+        } else {
+            element.navHeader.style.display = 'none';
+        }
     }
 }

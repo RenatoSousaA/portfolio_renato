@@ -10,33 +10,72 @@
     <!-- IMPORT STYLES -->
     <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
 
     <title>Renato Augusto de Sousa</title>
 </head>
 
-<body onscroll="changeScroll()" onload="changeScroll()" onresize="resizeElement()">
+<body onload="load();">
     <header role="header" class="header">
         <img class="img-logo" src="./assets/image/logo-renato.png" title="Logo Renato Sousa">
         <nav class="nav_header-icon nav-toggle-icon">
-            <a id="iconBarsTimesMenu" href="javascript:;" onclick="showMenuFull()">
+            <a id="iconBarsTimesMenu" href="javascript:;">
                 <i class="fas fa-bars"></i>
             </a>
-            <a id="iconTimesMenu" href="javascript:;" onclick="hideMenuFull()">
+            <a id="iconTimesMenu" href="javascript:;">
                 <i class="fas fa-times"></i>
             </a>
         </nav>
 
         <nav id="navHeader" class="nav_header nav-full">
-            <a href="">Home</a>
-            <a href="">Educação</a>
-            <a href="">Profissional</a>
-            <a href="">Contato</a>
+            <a class="nav-item" href="#sobre">Sobre</a>
+            <a class="nav-item" href="#educacao">Educação</a>
+            <a class="nav-item" href="#profissional">Profissional</a>
+            <a class="nav-item" href="#contato">Contato</a>
         </nav>
 
     </header>
 
-    <main role="main" class="main" style="height: 2000px;">
+    <main role="main" class="main">
+        <section id="sobre">
+            <img class="foto-perfil" src="./assets/image/perfil-foto.jpg" title="Foto de perfil do Renato Sousa">
+            <p class="paragrafo_sobre">
+                <span class="title_sobre">RENATO AUGUSTO DE SOUSA</span class="title_sobre">
+                <p class="subtile_sobre">Um jovem programador front-end apaixonado pelo que faz e sempre em busca de novos conhecimentos e desafios, atualmente cursa Mobile Development na FIAP e sonha um dia ter sua própria marca de aplicações mobile.</p>
+                <table class="table_sobre">
+                    <tr>
+                        <td>
+                            <i class="fas fa-user-clock fa-3x"></i><br>
+                            <p class="info_sobre">24 anos</p>
+                        </td>
+                        <td>
+                            <i class="fas fa-envelope fa-3x"></i><br>
+                            <p class="info_sobre">renato.sousainfo@gmail.com</p>
+                        </td>
+                        <td>
+                            <i class="fas fa-mobile-alt fa-3x"></i><br>
+                            <p class="info_sobre">(11) 9 9746-6488</p>
+                        </td>
+                        <td>
+                            <i class="fas fa-project-diagram fa-3x"></i><br>
+                            <p class="info_sobre">139 projetos no git</p>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        </section>
 
+        <section id="educacao" style="height: 500px; background-color: rgb(228, 82, 82);">
+            Test 2
+        </section>
+
+        <section id="profissional" style="height: 500px; background-color: rgb(78, 36, 146);">
+            Test 3
+        </section>
+
+        <section id="contato" style="height: 500px; background-color: rgb(80, 12, 12);">
+            Test 4
+        </section>
     </main>
 
     <footer role="footer" class="footer">
@@ -47,8 +86,8 @@
             </a>
 
             <a class="midias">
-                <i class="fab fa-twitter-square"></i>
-                <span class="text-icon">Twitter</span>
+                <i class="fab fa-github"></i>
+                <span class="text-icon">GitHub</span>
             </a>
 
             <a class="midias">
@@ -60,19 +99,18 @@
                 <i class="fab fa-instagram"></i>
                 <span class="text-icon">Instagram</span>
             </a>
-
         </nav>
-        <div class="copyright">
+        <section class="copyright">
             <p>© 2019 Copyright: Renato Sousa</p>
-        </div>
+        </section>
 
-        <button id="toTop" onclick="toTop();" class="toTop" title="Voltar para o topo"><i
-                class="far fa-hand-point-up"></i></button>
+        <button id="toTop" class="toTop" title="Voltar para o topo"><i class="far fa-hand-point-up"></i></button>
     </footer>
 
     <script defer src="./assets/fonts/font-awesome/js/all.min.js"></script>
     <script src="./assets/js/toTop.js"></script>
     <script src="./assets/js/toggleMenu.js"></script>
+    <script src="./assets/js/load.js"></script>
 </body>
 
 </html>
