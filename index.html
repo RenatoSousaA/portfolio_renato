@@ -10,7 +10,6 @@
     <!-- IMPORT STYLES -->
     <link rel="stylesheet" href="./assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/sobre.css">
 
     <title>Renato Augusto de Sousa</title>
 </head>
@@ -19,10 +18,10 @@
     <header role="header" class="header">
         <img class="img-logo" src="./assets/image/logo-renato.png" title="Logo Renato Sousa">
         <nav class="nav_header-icon nav-toggle-icon">
-            <a id="iconBarsTimesMenu" href="javascript:;">
+            <a id="iconBarsTimesMenu">
                 <i class="fas fa-bars"></i>
             </a>
-            <a id="iconTimesMenu" href="javascript:;">
+            <a id="iconTimesMenu">
                 <i class="fas fa-times"></i>
             </a>
         </nav>
@@ -41,40 +40,83 @@
             <img class="foto-perfil" src="./assets/image/perfil-foto.jpg" title="Foto de perfil do Renato Sousa">
             <p class="paragrafo_sobre">
                 <span class="title_sobre">RENATO AUGUSTO DE SOUSA</span class="title_sobre">
-                <p class="subtile_sobre">Um jovem programador front-end apaixonado pelo que faz e sempre em busca de novos conhecimentos e desafios, atualmente cursa Mobile Development na FIAP e sonha um dia ter sua própria marca de aplicações mobile.</p>
-                <table class="table_sobre">
-                    <tr>
-                        <td>
+                <p class="subtile_sobre">Um jovem programador front-end apaixonado pelo que faz e sempre em busca de
+                    novos conhecimentos e desafios, atualmente cursa Mobile Development na FIAP e sonha um dia ter sua
+                    própria marca de aplicações mobile.</p>
+                <div class="card">
+                    <div class="card-item">
+                        <div class="info-card">
                             <i class="fas fa-user-clock fa-3x"></i><br>
                             <p class="info_sobre">24 anos</p>
-                        </td>
-                        <td>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="info-card">
                             <i class="fas fa-envelope fa-3x"></i><br>
-                            <p class="info_sobre">renato.sousainfo@gmail.com</p>
-                        </td>
-                        <td>
+                            <p class="info_sobre">renato.sousainfo</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="info-card">
                             <i class="fas fa-mobile-alt fa-3x"></i><br>
                             <p class="info_sobre">(11) 9 9746-6488</p>
-                        </td>
-                        <td>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="info-card">
                             <i class="fas fa-project-diagram fa-3x"></i><br>
                             <p class="info_sobre">139 projetos no git</p>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                </div>
             </p>
         </section>
 
-        <section id="educacao" style="height: 500px; background-color: rgb(228, 82, 82);">
-            Test 2
+        <section id="educacao">
+            <ul>
+                <i class="fas fa-book-reader fa-3x icon-educacao"></i>
+                <li>
+                    <p class="instituicao-educacao">FIAP</p>
+                    <p class="curso-educacao">MOBILE DEVELOPMENT APPS, IOT, CHATBOTS & VIRTUAL ASSISTANTS</p>
+                    <p class="anos-educacao">2018 - Atualmente</p>
+                    <p class="descricao-educacao">Processo de desenvolvimento de software que inclui: Metodologia Ágil,
+                        Experiência do Usuário, Gestão Moderna, Marketing de Aplicativos, Plataformas de Nuvem e
+                        Segurança.</p>
+                </li>
+                <li class="saparador-educacao-li">
+                    <p class="instituicao-educacao">FIAP</p>
+                    <p class="curso-educacao">Analíse e desenvolvimento de sistemas</p>
+                    <p class="anos-educacao">2012 - 2018</p>
+                    <p class="descricao-educacao">Criação de aplicações sob medida (Distribuída, Web e Mobile) e manter
+                        sistemas já existentes. Integrar e desenvolver aplicações WEB com interfaces responsivas
+                        utilizando padrões (W3C, WEB Semântica e SEO). Usar tecnologias como HTML 5, CSS 3, Javascript,
+                        AngularJS, JQuery, Bootstrap e Java EE: Servlets, JSPs, JSTL e EL.</p>
+                </li>
+            </ul>
         </section>
 
-        <section id="profissional" style="height: 500px; background-color: rgb(78, 36, 146);">
+        <section id="profissional" style="height: 500px;">
             Test 3
         </section>
 
-        <section id="contato" style="height: 500px; background-color: rgb(80, 12, 12);">
-            Test 4
+        <section id="contato">
+            <form class="contato-form">
+                <label for="nome">Nome:</label>
+                <input id="nome-contato" class="field" type="text" placeholder="Digite o nome" />
+
+                <label for="assunto">Assunto:</label>
+                <input id="assunto-contato" class="field" type="text" placeholder="Digite o assunto" />
+
+                <label for="e-mail">E-mail:</label>
+                <input id="email-contato" class="field" type="text" placeholder="Digite o e-mail" />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem-contato" name="mensagem" id="mensagem-contato" class="field" cols="30" rows="10"
+                    placeholder="Digite aqui sua mensagem"></textarea>
+
+                <input type="button" class="btn" value="ENVIAR" onclick="enviaEmail();" />
+            </form>
+
         </section>
     </main>
 
@@ -107,9 +149,14 @@
         <button id="toTop" class="toTop" title="Voltar para o topo"><i class="far fa-hand-point-up"></i></button>
     </footer>
 
+    <div class="modal-background">
+        <div class="modal-load"></div>
+    </div>
+
     <script defer src="./assets/fonts/font-awesome/js/all.min.js"></script>
     <script src="./assets/js/toTop.js"></script>
     <script src="./assets/js/toggleMenu.js"></script>
+    <script src="./assets/js/enviarEmail.js"></script>
     <script src="./assets/js/load.js"></script>
 </body>
 

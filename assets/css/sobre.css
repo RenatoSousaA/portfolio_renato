@@ -1,7 +1,7 @@
 #sobre {
-    padding: 70px 15px 25px;
+    padding: 100px 80px 60px;
     text-align: center;
-    background-image: linear-gradient(360deg, #b9b9b9d9 0%, #e0e0e0bf 51%, #fafafab2 93%);
+    border-bottom: 2px solid #e6e6e6;
 }
 
 .foto-perfil{
@@ -16,32 +16,48 @@
 
 .subtile_sobre {
     margin-top: 20px;
-    color: #505050;    
     font-style: italic;
+    margin: 55px 60px 70px;
+    font-size: 14pt;
 }
 
 .paragrafo_sobre {
     margin-top: 20px;
 }
 
-.table_sobre{
+.card{
     width: 100%;
     margin-top: 30px;
 }
 
-.table_sobre tr td {
+.card-item{
     text-align: center;
-    width: 25%;
     color: #146305;
-}
-
-.table_sobre tr td:hover {
-    color: #133055;
-    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
 }
 
 .info_sobre {
     margin-top: 10px;
     font-size: 13pt;
     font-weight: 500;
+}
+
+.info-card {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 3px 2px 8px 0px #cecece;
+}
+
+.info-card:hover {
+    background-color: #189a00;
+    color: #fff;
+}
+
+.info-card svg {
+    margin-top: 32px;
 }

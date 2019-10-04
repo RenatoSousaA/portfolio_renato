@@ -1,0 +1,49 @@
+#educacao {
+    padding: 65px 15px;
+    text-align: center;
+    background-color: #fff;    
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.icon-educacao {
+    margin-bottom: 10px;
+    color: #146305;
+}
+
+.instituicao-educacao {
+    text-transform: uppercase;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #156306;
+    padding: 6px 0 15px;
+}
+.curso-educacao {
+    text-transform: uppercase;
+    font-size: 13pt;
+    color: #156306;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+.anos-educacao {
+    font-weight: bolder;
+    font-size: 11pt;
+    color: #3e3e3e;
+}
+.descricao-educacao {
+    padding: 25px 10px 10px;
+    color: #464646;
+}
+
+.saparador-educacao-li {
+    border-top: 1px solid #bbbbbb;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#educacao ul {
+    padding: 40px 110px;
+}
+
+#educacao ul li {
+    padding: 15px 40px;
+}

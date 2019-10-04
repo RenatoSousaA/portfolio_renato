@@ -1,0 +1,46 @@
+#contato {
+    padding: 65px 15px 160px;
+    text-align: center;
+    background-image: url('../image/background-grey.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #ececec;
+}
+
+.contato-form {
+    display: inline-grid;
+    width: 50%;
+    background-color: #ffffff82;
+    padding: 25px 50px;
+    border-radius: 10px;
+}
+
+.field {
+    padding: 10px 6px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.contato-form label {
+    text-align: left;
+    margin: 15px 0 3px;
+    font-size: 13pt;
+}
+
+.contato-form .btn {
+    margin: 20px 0;
+    padding: 15px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #1cad01;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.contato-form .btn:hover {
+    background-color: #3f1096;
+}
+
+.contato-form input, .contato-form textarea {
+    box-shadow: 1px 2px 4px 0px #a5a5a5;
+}

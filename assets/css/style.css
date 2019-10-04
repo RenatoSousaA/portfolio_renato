@@ -2,10 +2,17 @@
 @import './header.css';
 @import './footer.css';
 
+@import './educacao.css';
+@import './sobre.css';
+@import './contato.css';
+@import './modal.css';
+
 body {
-    background-color: #ecfdff;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../image/background-home.png');
+    background-size: 100vw;
+    background-attachment: fixed;
 }
 
 #iconTimesMenu {
