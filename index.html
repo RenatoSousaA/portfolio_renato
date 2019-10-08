@@ -149,8 +149,31 @@
         <button id="toTop" class="toTop" title="Voltar para o topo"><i class="far fa-hand-point-up"></i></button>
     </footer>
 
-    <div class="modal-background">
-        <div class="modal-load"></div>
+    <div id="modal" class="modal-background">
+        <div id="modal-alert" class="modal-load">
+            <div id="load-icon" class="displays-modal">
+                <i class="fa fa-spinner fa-spin fa-4x"></i>
+                <p>
+                    Carregando ...
+                </p>
+            </div>
+
+            <div id='success-icon' class="displays-modal">
+                <i class="fa fa-check-circle fa-4x"></i>
+                <p id="message-success">
+                    E-mail enviado com sucesso!
+                </p>
+                <button class="btn" onclick="fecharModal()">OK</button>
+            </div>
+
+            <div id='error-icon' class="displays-modal">
+                <i class="fa fa-times-circle fa-4x"></i>
+                <p id="message-error">
+                    Ocorreu algum erro durante o envio, tente novamente!
+                </p>
+                <button class="btn" onclick="fecharModal()">OK</button>
+            </div>
+        </div>
     </div>
 
     <script defer src="./assets/fonts/font-awesome/js/all.min.js"></script>
