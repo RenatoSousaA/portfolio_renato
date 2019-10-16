@@ -14,7 +14,7 @@
     <title>Renato Augusto de Sousa</title>
 </head>
 
-<body onload="load();">
+<body onload="load(); toSlide('front-end-carrocel');">
     <header role="header" class="header">
         <img class="img-logo" src="./assets/image/logo-renato.png" title="Logo Renato Sousa">
         <nav class="nav_header-icon nav-toggle-icon">
@@ -29,7 +29,7 @@
         <nav id="navHeader" class="nav_header nav-full">
             <a class="nav-item" href="#sobre">Sobre</a>
             <a class="nav-item" href="#educacao">Educação</a>
-            <a class="nav-item" href="#profissional">Profissional</a>
+            <a class="nav-item" href="#habilidades">Habilidades</a>
             <a class="nav-item" href="#contato">Contato</a>
         </nav>
 
@@ -95,8 +95,118 @@
             </ul>
         </section>
 
-        <section id="profissional" style="height: 500px;">
-            Test 3
+        <section id="habilidades">
+            <a onclick="toSlide('prev')" class="fas fa-arrow-circle-left fa-2x"></a>
+
+            <div id="front-end-carrocel" class="habilidades-sobre ativo">
+                <div class="foco">
+                    <i class="fas fa-code fa-4x hab-icon"></i>
+                    <p class="hab-tipo">Desenvolvimento front-end</p>
+                </div>
+                <div class="habilidades">
+                    <div class="barra barra-html">
+                        <div class="valor valor-html">
+                            <p class="nome-habilidade">HTML</p>
+                            <p class="porcentagem">95%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-css">
+                        <div class="valor valor-css">
+                            <p class="nome-habilidade">CSS</p>
+                            <p class="porcentagem">92%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-javascript">
+                        <div class="valor valor-javascript">
+                            <p class="nome-habilidade">Javascript</p>
+                            <p class="porcentagem">98%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-ux">
+                        <div class="valor valor-ux">
+                            <p class="nome-habilidade">UX</p>
+                            <p class="porcentagem">91%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="back-end-carrocel" class="habilidades-sobre">
+                <div class="foco">
+                    <i class="fas fa-layer-group fa-4x hab-icon"></i>
+                    <p class="hab-tipo">Desenvolvimento back-end</p>
+                </div>
+                <div class="habilidades">
+                    <div class="barra barra-html">
+                        <div class="valor valor-html">
+                            <p class="nome-habilidade">Node</p>
+                            <p class="porcentagem">95%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-dotnet">
+                        <div class="valor valor-dotnet">
+                            <p class="nome-habilidade">.Net</p>
+                            <p class="porcentagem">92%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-java">
+                        <div class="valor valor-java">
+                            <p class="nome-habilidade">Java</p>
+                            <p class="porcentagem">98%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-php">
+                        <div class="valor valor-php">
+                            <p class="nome-habilidade">PHP</p>
+                            <p class="porcentagem">91%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grupo-carrocel" class="habilidades-sobre">
+                <div class="foco">
+                    <i class="fas fa-users fa-4x hab-icon"></i>
+                    <p class="hab-tipo">Desenvolvimento em grupo</p>
+                </div>
+                <div class="habilidades">
+                    <div class="barra barra-comunicacao">
+                        <div class="valor valor-comunicacao">
+                            <p class="nome-habilidade">Comunicação</p>
+                            <p class="porcentagem">95%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-integracao">
+                        <div class="valor valor-integracao">
+                            <p class="nome-habilidade">Integração</p>
+                            <p class="porcentagem">92%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-pontualidade">
+                        <div class="valor valor-pontualidade">
+                            <p class="nome-habilidade">Pontualidade</p>
+                            <p class="porcentagem">98%</p>
+                        </div>
+                    </div>
+
+                    <div class="barra barra-senso-equipe">
+                        <div class="valor valor-senso-equipe">
+                            <p class="nome-habilidade">Senso de equipe</p>
+                            <p class="porcentagem">91%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a onclick="toSlide('next')" class="fas fa-arrow-circle-right fa-2x"></a>
         </section>
 
         <section id="contato">
@@ -180,6 +290,7 @@
     <script src="./assets/js/toTop.js"></script>
     <script src="./assets/js/toggleMenu.js"></script>
     <script src="./assets/js/enviarEmail.js"></script>
+    <script src="./assets/js/carrocel.js"></script>
     <script src="./assets/js/load.js"></script>
 </body>
 
