@@ -23,7 +23,7 @@
     margin: 0px 10px;
     height: 55px;
     float: right;
-}  
+}
 
 .img-logo {
     width: 185px;
@@ -36,7 +36,14 @@
     margin: 0;
 }
 
-.nav-header a:hover, .nav-header-toggle a:hover {
+.nav-header a.ativo-menu {
+    background-color: #1bad00;
+    color: #fff;
+}
+
+
+.nav-header a:hover,
+.nav-header-toggle a:hover {
     background-color: #1bad00;
     color: #fff;
 }
@@ -52,7 +59,7 @@
 
     .nav-toggle-icon {
         display: block;
-    }   
+    }
 
     .nav-header {
         margin: 0px;
@@ -66,7 +73,7 @@
         color: #133055;
         line-height: 50px;
         display: block;
-        text-align: center;        
+        text-align: center;
     }
 }
 
@@ -86,8 +93,8 @@
     .nav-header {
         margin: 0px 10px;
         height: 55px;
-        float: right;        
-    }   
+        float: right;
+    }
 
     .nav-header a {
         display: inline-block;

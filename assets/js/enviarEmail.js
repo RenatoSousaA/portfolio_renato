@@ -14,10 +14,10 @@ function enviaEmail() {
         document.getElementById('message-error').innerText = 'Preencha todos os campos!';
         document.getElementById('error-icon').style.display = 'block';
     }
-    
+
 }
 
-function envioOk() {    
+function envioOk() {
     clearModal();
     document.getElementById('load-icon').style.display = 'block'
 
@@ -34,8 +34,7 @@ function envioOk() {
     }
 
     fetch(
-        'https://fiap-sender.herokuapp.com/email/send',
-        {
+        'https://fiap-sender.herokuapp.com/email/send', {
             method: 'POST',
             headers: {
                 'Accept': 'aplication/json',

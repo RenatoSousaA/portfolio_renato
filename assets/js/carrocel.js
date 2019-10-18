@@ -1,4 +1,4 @@
-var timeDefault = 93500;
+var timeDefault = 3500;
 var time = timeDefault;
 var slideSelected;
 refreshInteval = setInterval(intervalNextSlide, 1000);

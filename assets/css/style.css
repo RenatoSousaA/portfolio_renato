@@ -19,3 +19,17 @@ body {
 #iconTimesMenu {
     display: none;
 }
+
+.btn {
+    margin: 20px 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #1cad01;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #3f1096;
+}
