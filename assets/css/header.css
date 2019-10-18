@@ -7,9 +7,10 @@
     border-bottom: 1px solid #ccc;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
-.nav_header-icon a {
+.nav-header-icon a {
     display: inline-block;
     text-decoration: none;
     padding: 0px 20px;
@@ -18,7 +19,7 @@
     line-height: 50px;
 }
 
-.nav_header-icon {
+.nav-header-icon {
     margin: 0px 10px;
     height: 55px;
     float: right;
@@ -35,7 +36,7 @@
     margin: 0;
 }
 
-.nav_header a:hover, .nav_header-toggle a:hover {
+.nav-header a:hover, .nav-header-toggle a:hover {
     background-color: #1bad00;
     color: #fff;
 }
@@ -53,12 +54,12 @@
         display: block;
     }   
 
-    .nav_header {
+    .nav-header {
         margin: 0px;
         border-top: 1px solid #ccc;
     }
 
-    .nav_header a {
+    .nav-header a {
         text-decoration: none;
         padding: 0px 20px;
         height: 100%;
@@ -82,13 +83,13 @@
         display: none;
     }
 
-    .nav_header {
+    .nav-header {
         margin: 0px 10px;
         height: 55px;
         float: right;        
     }   
 
-    .nav_header a {
+    .nav-header a {
         display: inline-block;
         text-decoration: none;
         padding: 0px 20px;

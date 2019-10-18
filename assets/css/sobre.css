@@ -61,3 +61,55 @@
 .info-card svg {
     margin-top: 32px;
 }
+
+@media only screen and (max-width: 479px) {
+    #sobre {
+        padding: 100px 10px 60px;
+    }
+
+    .card-item {
+        margin: 15px 20px 0;
+    }
+}
+
+@media only screen and (min-width: 480px) { 
+    #sobre {
+        padding: 100px 10px 60px;
+    }
+
+    .card-item {
+        margin: 15px 20px 0;
+    }
+
+    .info-card svg {
+        margin-top: 15px;
+    }
+
+    .info-card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info_sobre {
+        font-size: 10pt;
+    }
+ }
+@media only screen and (min-width: 600px) { 
+    #sobre {
+        padding: 100px 10px 60px;
+    }
+
+    .card-item {
+        margin: 15px 20px 0;
+    } 
+ }
+@media only screen and (min-width: 768px) { 
+    .card-item {
+        margin: 15px 20px 0;
+    } 
+ }
+@media only screen and (min-width: 992px) { 
+    .card-item {
+        margin: 15px 45px 0;
+    }    
+ }

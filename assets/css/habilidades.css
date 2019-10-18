@@ -1,6 +1,7 @@
 #habilidades {
     padding: 80px 80px;
     border-bottom: 2px solid #e6e6e6;
+    display: flex;
 }
 
 .habilidades-sobre {
@@ -12,6 +13,7 @@
 
 .habilidades-sobre.ativo {
     display: flex;
+    width: 100%;
 }
 
 .habilidades {
@@ -114,3 +116,30 @@
 .valor-senso-equipe {
     width: 99%;
 }
+
+.setas-carrocel {
+    margin: auto 20px;
+    cursor: pointer;    
+}
+
+.setas-carrocel:hover {
+    color: #156306;
+}
+
+@media only screen and (max-width: 850px) { 
+    .habilidades-sobre.ativo {
+        display: block;     
+    }
+
+    .habilidades {
+        width: 100%;
+    }
+
+    .foco {
+        width: 100%;
+    }
+
+    #habilidades {
+        padding: 80px 10px;
+    }
+ }

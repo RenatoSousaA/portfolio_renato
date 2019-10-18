@@ -17,7 +17,7 @@
 <body onload="load(); toSlide('front-end-carrocel');">
     <header role="header" class="header">
         <img class="img-logo" src="./assets/image/logo-renato.png" title="Logo Renato Sousa">
-        <nav class="nav_header-icon nav-toggle-icon">
+        <nav class="nav-header-icon nav-toggle-icon">
             <a id="iconBarsTimesMenu">
                 <i class="fas fa-bars"></i>
             </a>
@@ -26,7 +26,7 @@
             </a>
         </nav>
 
-        <nav id="navHeader" class="nav_header nav-full">
+        <nav id="navHeader" class="nav-header nav-full">
             <a class="nav-item" href="#sobre">Sobre</a>
             <a class="nav-item" href="#educacao">Educação</a>
             <a class="nav-item" href="#habilidades">Habilidades</a>
@@ -96,7 +96,9 @@
         </section>
 
         <section id="habilidades">
-            <a onclick="toSlide('prev')" class="fas fa-arrow-circle-left fa-2x"></a>
+            <div class="setas-carrocel">
+                    <a onclick="toSlide('prev')" class="fas fa-arrow-circle-left fa-2x"></a>
+            </div>            
 
             <div id="front-end-carrocel" class="habilidades-sobre ativo">
                 <div class="foco">
@@ -206,7 +208,9 @@
                 </div>
             </div>
 
-            <a onclick="toSlide('next')" class="fas fa-arrow-circle-right fa-2x"></a>
+            <div class="setas-carrocel">
+                    <a onclick="toSlide('next')" class="fas fa-arrow-circle-right fa-2x"></a>
+            </div>            
         </section>
 
         <section id="contato">
